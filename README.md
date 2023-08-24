@@ -1,2 +1,2 @@
 # flutter-web-portfolio
-portfolio uding flutter framework
+portfolio using flutter framework
