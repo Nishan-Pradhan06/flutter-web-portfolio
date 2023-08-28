@@ -1,7 +1,11 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-// import 'package:portfolio/navbar/links.dart';
+import 'package:portfolio/navbar/links.dart';
 
+import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 // import '../component/utils/constants_url_lanchur.dart';
 
 List<Widget> navItems = [
@@ -37,14 +41,17 @@ List<Widget> navItems = [
     // mainAxisSize: MainAxisSize.min,
     children: [
       IconButton(
-          onPressed: () {},
-          // onPressed: ()=>openURL(linkedin),
+          onPressed: () {
+            launchUrlString(facebook);
+            debugPrint('Facebook Clicked');
+          },
           icon: const FaIcon(
             FontAwesomeIcons.facebook,
             color: Color.fromARGB(255, 99, 27, 157),
           )),
       IconButton(
           onPressed: () {
+            launchUrlString(linkedin);
             debugPrint('Linkedin Clicked');
           },
           icon: const FaIcon(
@@ -53,7 +60,8 @@ List<Widget> navItems = [
           )),
       IconButton(
         onPressed: () {
-          debugPrint('GIthub Clicked');
+          launchUrlString(gitHub);
+          debugPrint('Github Clicked');
         },
         icon: const FaIcon(
           FontAwesomeIcons.github,
