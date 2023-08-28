@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-class ShortIntro extends StatelessWidget {
-  const ShortIntro({super.key});
+
+class Skills extends StatelessWidget {
+  const Skills({super.key});
 
   @override
   Widget build(BuildContext context) {

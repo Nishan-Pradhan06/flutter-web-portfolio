@@ -1,11 +1,13 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:portfolio/component/about.dart';
+import 'package:portfolio/component/contacts.dart';
 import 'package:portfolio/component/educations.dart';
+import 'package:portfolio/component/home.dart';
+import 'package:portfolio/component/services.dart';
+import 'package:portfolio/component/skills.dart';
 import 'package:portfolio/navbar/navabr.dart';
-
-import 'component/shortintro.dart';
-// import 'package:flutter/src/widgets/framework.dart';
-// import 'package:flutter/src/widgets/placeholder.dart';
 
 class Portfolio extends StatefulWidget {
   const Portfolio({super.key});
@@ -50,8 +52,11 @@ class _PortfolioState extends State<Portfolio> {
           children: [
             Wrap(
               children: const [
-                ShortIntro(),
+                Home(),
                 About(),
+                Skills(),
+                Services(),
+                Contacts(),
                 Education(),
               ],
             )
