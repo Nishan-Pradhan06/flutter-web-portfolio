@@ -7,36 +7,93 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 85),
+      padding: const EdgeInsets.symmetric(vertical: 85),
       child: Center(
         child: Column(
           children: [
-            Text(
+            const Text(
               'Get to know More',
             ),
-            Text(
+            const Text(
               'About Me',
               style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
+            ),
+            const SizedBox(
+              height: 30,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(
-                  'assets/img/img.png',
-                  height: 350,
-                  width: 350,
+                const SizedBox(
+                  height: 30,
                 ),
-                Column(
+                Image.asset(
+                  'assets/img/img1.png',
+                  height: 330,
+                  width: 330,
+                ),
+                Wrap(
                   children: [
-                    Row(
+                    Column(
                       children: [
-                        Card(
-                          child: Text('hhhhh'),
+                        Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 35, horizontal: 120),
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 2.0),
+                                borderRadius: BorderRadius.circular(30),
+                                // color: Colors.yellow,
+                              ),
+                              child: Column(
+                                children: const [
+                                  Icon(Icons.no_sim),
+                                  Text(
+                                    'Exprience',
+                                    style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w800),
+                                  ),
+                                  Text('+2 Exprience'),
+                                  Text('Frontend Developer'),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 20,
+                            ),
+                            Container(
+                              padding: const EdgeInsets.symmetric(
+                                  vertical: 35, horizontal: 120),
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 2.0),
+                                borderRadius: BorderRadius.circular(30),
+                                // color: Colors.yellow,
+                              ),
+                              child: Column(
+                                children: const [
+                                  Icon(Icons.no_accounts),
+                                  Text(
+                                    'Education',
+                                    style: TextStyle(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w800),
+                                  ),
+                                  Text('+2 '),
+                                  Text('Bachelor BCA'),
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
-                        Card(),
+                        const SizedBox(height: 20),
+                        Padding(
+                          padding: const EdgeInsets.all(20.0),
+                          child: Text(aboutme),
+                        ),
                       ],
                     ),
-                    Text(aboutme),
                   ],
                 )
               ],
