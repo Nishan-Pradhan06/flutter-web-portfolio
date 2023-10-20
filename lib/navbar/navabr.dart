@@ -16,7 +16,9 @@ List<Widget> navItems = [
   const SizedBox(width: 20),
   Padding(
     padding: const EdgeInsets.all(4.0),
-    child: ElevatedButton(onPressed: () {}, child: const Text('About')),
+    child: ElevatedButton(onPressed: () {
+      
+    }, child: const Text('About')),
   ),
   const SizedBox(width: 20),
   Padding(

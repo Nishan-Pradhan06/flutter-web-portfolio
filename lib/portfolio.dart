@@ -38,7 +38,7 @@ class _PortfolioState extends State<Portfolio> {
         //
         actions: isMobile ? null : navItems,
       ),
-      drawer: isMobile
+      endDrawer: isMobile
           ? Drawer(
               elevation: 300,
               child: ListView(
