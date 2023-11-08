@@ -21,8 +21,11 @@ class _HomeState extends State<Home> {
       // padding: EdgeInsets.symmetric(vertical: 30),
       child: Column(
         children: [
-          const Divider(
-            thickness: 2,
+          // const Divider(
+          //   thickness: 2,
+          // ),
+          SizedBox(
+            height: 40,
           ),
           const Padding(padding: EdgeInsets.symmetric(vertical: 30)),
           Image.asset(

@@ -16,9 +16,7 @@ List<Widget> navItems = [
   const SizedBox(width: 20),
   Padding(
     padding: const EdgeInsets.all(4.0),
-    child: ElevatedButton(onPressed: () {
-      
-    }, child: const Text('About')),
+    child: ElevatedButton(onPressed: () {}, child: const Text('About')),
   ),
   const SizedBox(width: 20),
   Padding(
@@ -43,30 +41,68 @@ List<Widget> navItems = [
     // mainAxisSize: MainAxisSize.min,
     children: [
       IconButton(
-          onPressed: () {
-            launchUrlString(facebook);
-            debugPrint('Facebook Clicked');
-          },
-          icon: const FaIcon(
-            FontAwesomeIcons.facebook,
-            color: Color.fromARGB(255, 99, 27, 157),
-          )),
+        hoverColor: Colors.grey[10],
+        splashRadius: 10,
+        onPressed: () {
+          launchUrlString(facebook);
+          debugPrint('Facebook Clicked');
+        },
+        icon: const FaIcon(
+          FontAwesomeIcons.facebook,
+          size: 20,
+          color: Color.fromARGB(255, 99, 27, 157),
+        ),
+      ),
       IconButton(
+        hoverColor: Colors.grey[10],
+        splashRadius: 10,
+        onPressed: () {
+          launchUrlString(gitHub);
+          debugPrint('Twitter Clicked');
+        },
+        icon: const FaIcon(
+          FontAwesomeIcons.twitter,
+          size: 20,
+          color: Color.fromARGB(255, 99, 27, 157),
+        ),
+      ),
+      IconButton(
+          hoverColor: Colors.grey[10],
+          splashRadius: 10,
           onPressed: () {
             launchUrlString(linkedin);
             debugPrint('Linkedin Clicked');
           },
           icon: const FaIcon(
             FontAwesomeIcons.linkedin,
+            size: 20,
             color: Color.fromARGB(255, 99, 27, 157),
           )),
       IconButton(
+        hoverColor: Colors.grey[10],
+        splashRadius: 10,
         onPressed: () {
           launchUrlString(gitHub);
           debugPrint('Github Clicked');
         },
         icon: const FaIcon(
           FontAwesomeIcons.github,
+          size: 20,
+          color: Color.fromARGB(255, 99, 27, 157),
+        ),
+      ),
+      IconButton(
+        // highlightColor: Colors.red,
+        hoverColor: Colors.grey[10],
+        splashRadius: 10,
+        onPressed: () {
+          launchUrlString(gitHub);
+
+          debugPrint('Instagram Clicked');
+        },
+        icon: const FaIcon(
+          FontAwesomeIcons.instagram,
+          size: 20,
           color: Color.fromARGB(255, 99, 27, 157),
         ),
       ),
