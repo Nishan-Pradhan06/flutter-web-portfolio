@@ -8,6 +8,6 @@ const String facebook =
 // linkedin Link
 const String linkedin = 'https://www.linkedin.com/in/nishan-pradhan06/';
 // linkedin Link
-const String instagram = 'https://www.linkedin.com/in/nishan-pradhan06/';
+const String instagram = 'https://www.instagram.com/pradhan_nishan_16/';
 // linkedin Link
-const String twitter = 'https://www.instagram.com/pradhan_nishan_16/';
+const String twitter = '';

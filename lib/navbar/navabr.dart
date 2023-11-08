@@ -57,7 +57,7 @@ List<Widget> navItems = [
         hoverColor: Colors.grey[10],
         splashRadius: 10,
         onPressed: () {
-          launchUrlString(gitHub);
+          launchUrlString(twitter);
           debugPrint('Twitter Clicked');
         },
         icon: const FaIcon(
@@ -96,7 +96,7 @@ List<Widget> navItems = [
         hoverColor: Colors.grey[10],
         splashRadius: 10,
         onPressed: () {
-          launchUrlString(gitHub);
+          launchUrlString(instagram);
 
           debugPrint('Instagram Clicked');
         },
