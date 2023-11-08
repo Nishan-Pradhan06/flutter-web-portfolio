@@ -1,0 +1,10 @@
+^C:\USERS\NISHA\ONEDRIVE\DESKTOP\POFT\FLUTTER-WEB-PORTFOLIO\BUILD\WINDOWS\CMAKEFILES\3398CA6006FC9B1B1B00F2B1383964A3\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
