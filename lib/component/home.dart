@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
           // const Divider(
           //   thickness: 2,
           // ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           const Padding(padding: EdgeInsets.symmetric(vertical: 30)),
