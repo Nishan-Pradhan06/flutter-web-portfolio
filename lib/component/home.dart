@@ -29,7 +29,7 @@ class _HomeState extends State<Home> {
           ),
           const Padding(padding: EdgeInsets.symmetric(vertical: 30)),
           Image.asset(
-            "assets/img/img.png",
+            "assets/img/logo.png",
             height: 400.0,
             width: 400.0,
           ),
