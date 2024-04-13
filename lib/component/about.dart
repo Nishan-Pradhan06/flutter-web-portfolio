@@ -28,7 +28,7 @@ class About extends StatelessWidget {
                   height: 30,
                 ),
                 Image.asset(
-                  'assets/img/img1.png',
+                  'assets/img/logo.png',
                   height: 330,
                   width: 330,
                 ),
