@@ -47,11 +47,11 @@ class _PortfolioState extends State<Portfolio> {
             )
           : null,
       //whole home body
-      body: SingleChildScrollView(
+      body:const SingleChildScrollView(
         child: Column(
           children: [
             Wrap(
-              children: const [
+              children:  [
                 Home(),
                 About(),
                 Skills(),

@@ -46,8 +46,8 @@ class About extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(30),
                                 // color: Colors.yellow,
                               ),
-                              child: Column(
-                                children: const [
+                              child: const Column(
+                                children: [
                                   Icon(Icons.no_sim),
                                   Text(
                                     'Exprience',
@@ -71,8 +71,8 @@ class About extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(30),
                                 // color: Colors.yellow,
                               ),
-                              child: Column(
-                                children: const [
+                              child: const Column(
+                                children: [
                                   Icon(Icons.no_accounts),
                                   Text(
                                     'Education',
