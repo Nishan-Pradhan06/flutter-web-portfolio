@@ -21,24 +21,26 @@ class _HomeState extends State<Home> {
       // padding: EdgeInsets.symmetric(vertical: 30),
       child: Column(
         children: [
-          // const Divider(
-          //   thickness: 2,
-          // ),
-          const SizedBox(
-            height: 40,
-          ),
-          const Padding(padding: EdgeInsets.symmetric(vertical: 30)),
-          Image.asset(
-            "assets/img/logo.png",
-            height: 400.0,
-            width: 400.0,
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          const Text(
-            'Nishan Pradhan',
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.w600),
+          Stack(
+            children: [
+              Center(
+                child: Image.asset(
+                  "assets/img/logo.png",
+                  height: 600.0,
+                  // width: 400.0,
+                ),
+              ),
+              const Center(
+                child: Padding(
+                  padding: EdgeInsets.only(top: 560),
+                  child: Text(
+                    'Nishan Pradhan',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 45, fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ),
+            ],
           ),
           const Text(
             'I am a developer and i am looking for dev role across Nepal.',
@@ -47,10 +49,10 @@ class _HomeState extends State<Home> {
           const SizedBox(
             height: 10,
           ),
-          Wrap(
+          const Wrap(
             spacing: 8.0,
             runSpacing: 8.0,
-            children: const [
+            children: [
               Chip(
                 label: Text('Full stack Developer',
                     style: TextStyle(fontSize: 11)),
