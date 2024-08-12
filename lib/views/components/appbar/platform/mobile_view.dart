@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../constants/theme/colors.dart';
+import 'package:portfolio/views/components/appbar/leading.dart';
+import '../../../../constants/theme/colors.dart';
 
 class MobileViewAppBar extends StatelessWidget {
   const MobileViewAppBar({super.key});
@@ -10,7 +11,7 @@ class MobileViewAppBar extends StatelessWidget {
       automaticallyImplyLeading: false,
       elevation: 2.0,
       foregroundColor: Colors.black,
-      backgroundColor: BrandColors.kSecondary,
+      backgroundColor: BrandColors.darkPrimary,
       scrolledUnderElevation: 6.0,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
@@ -20,19 +21,7 @@ class MobileViewAppBar extends StatelessWidget {
       ),
       centerTitle: true,
       leadingWidth: 100,
-      leading: const Align(
-        alignment: Alignment.center,
-        child: Padding(
-          padding: EdgeInsets.only(left: 6),
-          child: Text(
-            'Nishan.',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-        ),
-      ),
+      leading: const Leading(),
       actions: [
         IconButton(
           hoverColor: Colors.transparent,

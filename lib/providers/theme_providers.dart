@@ -11,14 +11,12 @@ class ThemeProviders with ChangeNotifier {
         textTheme: ThemeData.light().textTheme.apply(
               fontFamily: 'custom',
             ),
-        canvasColor: Colors.purple.shade50,
       );
 
   ThemeData get _darkTheme => ThemeData.dark().copyWith(
         textTheme: ThemeData.dark().textTheme.apply(
               fontFamily: 'custom',
             ),
-        canvasColor: Colors.black,
       );
 
   void toggleTheme() {

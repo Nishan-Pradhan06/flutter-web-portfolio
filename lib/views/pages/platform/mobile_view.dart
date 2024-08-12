@@ -5,9 +5,9 @@ class MobileViewPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        const SizedBox(
+         SizedBox(
           height: 20,
         ),
         Stack(
@@ -19,7 +19,7 @@ class MobileViewPage extends StatelessWidget {
             //     // width: 400.0,
             //   ),
             // ),
-            const Center(
+             Center(
               child: Padding(
                 padding: EdgeInsets.only(top: 460),
                 child: Text(
@@ -31,14 +31,14 @@ class MobileViewPage extends StatelessWidget {
             ),
           ],
         ),
-        const Text(
+         Text(
           'I am a developer and i am looking for dev role across Nepal.',
           textAlign: TextAlign.center,
         ),
-        const SizedBox(
+         SizedBox(
           height: 10,
         ),
-        const Wrap(
+         Wrap(
           spacing: 8.0,
           runSpacing: 8.0,
           children: [

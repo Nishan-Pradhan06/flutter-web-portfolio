@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/views/components/appbar/desktop_view.dart';
-import 'package:portfolio/views/components/appbar/mobile_view.dart';
+import 'package:portfolio/views/components/appbar/platform/desktop_view.dart';
+import 'package:portfolio/views/components/appbar/platform/mobile_view.dart';
 import 'package:portfolio/views/components/responsive.dart';
-
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});
@@ -16,5 +15,5 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+  Size get preferredSize => const Size.fromHeight(80.0);
 }

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/views/pages/platform/desktop_view.dart';
 import 'package:portfolio/views/pages/platform/mobile_view.dart';
-import '../components/appbar.dart';
+import 'package:provider/provider.dart';
+import '../../constants/theme/colors.dart';
+import '../../providers/theme_providers.dart';
+import '../components/appbar/platform/appbar.dart';
 import '../components/responsive.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,7 +12,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final themeProvider = Provider.of<ThemeProviders>(context);
     return Scaffold(
+      backgroundColor: themeProvider.isDarkMode
+          ? BrandColors.darkSecondary
+          : BrandColors.lightSecondary,
       appBar: const CustomAppBar(),
       // endDrawer: Responsive.isMobile(context) ? const EndDrawerView() : null,
       body: const SingleChildScrollView(
