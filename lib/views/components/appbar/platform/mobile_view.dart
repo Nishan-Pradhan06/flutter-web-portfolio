@@ -11,7 +11,7 @@ class MobileViewAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProviders>(context);
     return Padding(
-      padding: const EdgeInsets.only(top: 20, left: 20, right: 20),
+      padding: const EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
       child: AppBar(
         automaticallyImplyLeading: false,
         elevation: 2.0,
@@ -33,12 +33,15 @@ class MobileViewAppBar extends StatelessWidget {
         leadingWidth: 106,
         leading: const Leading(),
         actions: [
-          IconButton(
-            hoverColor: Colors.transparent,
-            onPressed: () {
-              Scaffold.of(context).openEndDrawer();
-            },
-            icon: const Icon(Icons.menu_rounded),
+          Padding(
+            padding: const EdgeInsets.only(right: 10),
+            child: IconButton(
+              hoverColor: Colors.transparent,
+              onPressed: () {
+                Scaffold.of(context).openEndDrawer();
+              },
+              icon: const Icon(Icons.menu_rounded),
+            ),
           )
         ],
       ),

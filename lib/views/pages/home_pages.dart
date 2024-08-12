@@ -4,7 +4,7 @@ import 'package:portfolio/views/pages/platform/mobile_view.dart';
 import 'package:provider/provider.dart';
 import '../../constants/theme/colors.dart';
 import '../../providers/theme_providers.dart';
-import '../components/appbar/platform/appbar.dart';
+import '../components/appbar/appbar.dart';
 import '../components/end_drawer_nav.dart';
 import '../components/floating_buttom.dart';
 import '../components/responsive.dart';
