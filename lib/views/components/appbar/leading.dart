@@ -17,7 +17,7 @@ class Leading extends StatelessWidget {
         child: Align(
           alignment: Alignment.center,
           child: Padding(
-            padding: const EdgeInsets.only(left: 6),
+            padding: const EdgeInsets.only(left: 20),
             child: Text(
               'Nishan.',
               style: TextStyle(

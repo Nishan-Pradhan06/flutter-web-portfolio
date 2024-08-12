@@ -31,7 +31,7 @@ class DesktopViewAppBar extends StatelessWidget {
           ),
         ),
         leading: const Leading(),
-        leadingWidth: 100,
+        leadingWidth: 106,
         centerTitle: true,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -48,7 +48,7 @@ class DesktopViewAppBar extends StatelessWidget {
           Consumer<ThemeProviders>(
             builder: (context, lightToggleProvider, child) {
               return Padding(
-                padding: const EdgeInsets.only(right: 10),
+                padding: const EdgeInsets.only(right: 20),
                 child: IconButton(
                   onPressed: () {
                     lightToggleProvider.toggleTheme();

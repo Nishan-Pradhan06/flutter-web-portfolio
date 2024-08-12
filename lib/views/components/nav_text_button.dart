@@ -21,7 +21,7 @@ class NavTextButton extends StatelessWidget {
       child: Text(
         title,
         style: TextStyle(
-          fontSize: 18,
+          fontSize: 16,
           fontFamily: 'custom',
           color:
               themeProvider.isDarkMode ? Colors.white : BrandColors.darkPrimary,
