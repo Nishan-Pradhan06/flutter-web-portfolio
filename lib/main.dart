@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProviders>(context);
     return MaterialApp(
-      title: 'Portfolio',
+      title: 'Nishan Pradhan - Flutter Developer & Computer Science Student',
       debugShowCheckedModeBanner: false,
       theme: themeProvider.currentTheme,
       home: const HomePage(),
