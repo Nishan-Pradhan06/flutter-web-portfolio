@@ -14,63 +14,61 @@ class EndDrawerView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProviders>(context);
-    return AbsorbPointer(
-      child: Drawer(
-        shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.zero,
-        ),
-        backgroundColor: themeProvider.isDarkMode
-            ? BrandColors.darkPrimary
-            : BrandColors.lightPrimary,
-        width: 250,
-        child: Center(
-          child: Padding(
-            padding: const EdgeInsets.only(left: 14.0, top: 30, bottom: 10),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                NavTextButton(title: 'Home', onPressed: () {}),
-                NavTextButton(title: 'About', onPressed: () {}),
-                NavTextButton(title: 'Skills', onPressed: () {}),
-                NavTextButton(title: 'Projects', onPressed: () {}),
-                NavTextButton(title: 'Services', onPressed: () {}),
-                NavTextButton(title: 'Contact', onPressed: () {}),
-                const Spacer(),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SocialIconButton(
-                      onPressed: () {
-                        launchUrlString(gitHub);
-                      },
-                      icon: FontAwesomeIcons.github,
-                      color: Colors.black,
-                    ),
-                    SocialIconButton(
-                      onPressed: () {
-                        launchUrlString(linkedin);
-                      },
-                      icon: FontAwesomeIcons.linkedin,
-                      color: Colors.blue[900]!,
-                    ),
-                    SocialIconButton(
-                      onPressed: () {
-                        launchUrlString(youtube);
-                      },
-                      icon: FontAwesomeIcons.youtube,
-                      color: Colors.red[900]!,
-                    ),
-                    SocialIconButton(
-                      onPressed: () {
-                        launchUrlString(facebook);
-                      },
-                      icon: FontAwesomeIcons.facebook,
-                      color: Colors.blue[900]!,
-                    ),
-                  ],
-                )
-              ],
-            ),
+    return Drawer(
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.zero,
+      ),
+      backgroundColor: themeProvider.isDarkMode
+          ? BrandColors.darkPrimary
+          : BrandColors.lightPrimary,
+      width: 250,
+      child: Center(
+        child: Padding(
+          padding: const EdgeInsets.only(left: 14.0, top: 30, bottom: 10),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              NavTextButton(title: 'Home', onPressed: () {}),
+              NavTextButton(title: 'About', onPressed: () {}),
+              NavTextButton(title: 'Skills', onPressed: () {}),
+              NavTextButton(title: 'Projects', onPressed: () {}),
+              NavTextButton(title: 'Services', onPressed: () {}),
+              NavTextButton(title: 'Contact', onPressed: () {}),
+              const Spacer(),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SocialIconButton(
+                    onPressed: () {
+                      launchUrlString(gitHub);
+                    },
+                    icon: FontAwesomeIcons.github,
+                    color: Colors.black,
+                  ),
+                  SocialIconButton(
+                    onPressed: () {
+                      launchUrlString(linkedin);
+                    },
+                    icon: FontAwesomeIcons.linkedin,
+                    color: Colors.blue[900]!,
+                  ),
+                  SocialIconButton(
+                    onPressed: () {
+                      launchUrlString(youtube);
+                    },
+                    icon: FontAwesomeIcons.youtube,
+                    color: Colors.red[900]!,
+                  ),
+                  SocialIconButton(
+                    onPressed: () {
+                      launchUrlString(facebook);
+                    },
+                    icon: FontAwesomeIcons.facebook,
+                    color: Colors.blue[900]!,
+                  ),
+                ],
+              )
+            ],
           ),
         ),
       ),

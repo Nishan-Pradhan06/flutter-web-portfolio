@@ -21,6 +21,7 @@ dependencies:
   provider: ^6.1.2
   scroll_to_index: ^3.0.1
   dio: ^5.5.0+1
+  animated_text_kit: ^4.2.2
 
 dev_dependencies:
   flutter_test:
@@ -32,8 +33,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/img/
   #   - images/a_dot_ham.jpeg
 
   fonts:

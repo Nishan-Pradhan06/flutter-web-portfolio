@@ -11,7 +11,7 @@ class MobileViewAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeProvider = Provider.of<ThemeProviders>(context);
     return Padding(
-      padding: const EdgeInsets.only(left: 20, right: 20, top: 20, bottom: 20),
+      padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
       child: AppBar(
         automaticallyImplyLeading: false,
         elevation: 2.0,

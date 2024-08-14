@@ -14,3 +14,7 @@ const String linkedin = 'https://www.linkedin.com/in/nishan-pradhan06/';
 
 // instagram Link
 const String youtube = 'https://www.youtube.com/@nishanpradhan06';
+
+
+String str =
+    "Student Developer Who Exploring New Things In Dev Part Of IT World";
